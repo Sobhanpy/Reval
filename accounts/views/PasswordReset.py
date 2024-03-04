@@ -24,7 +24,7 @@ class PasswordResetView(FormView):
         phone = self.request.POST.get("phone")
         user = get_object_or_404(CustomeUser, phone=phone)
         token = self.get_tokens_for_user(user)
-        message = f"""کاربر عزیز با لینک زیر وارد وب  سایت شوید 
+        message = f"""کاربر عزیز با لینک زیر وارد وب  سایت شوید
         http://127.0.0.1:accounts/reset-password/{token}
         """
         to = [phone]

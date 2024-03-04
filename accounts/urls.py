@@ -8,7 +8,6 @@ from accounts.views import (
     PasswordResetConfirmView,
     ResetDoneView,
     PasswordChangeView,
-    ResetDoneView,
 )
 
 app_name = "acounts"

@@ -1,0 +1,12 @@
+[flake8]
+ignore = D203
+exclude =
+    .git,
+    .gitignore,
+    __pycache__,
+    docs/source/conf.py,
+    old,
+    __init__.py,
+    build,
+    dist
+max-complexity = 10

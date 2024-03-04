@@ -9,7 +9,6 @@ def SendSMSTokenView(target, message):
     sms = api.sms()
     to = target[0]
     _from = "50002710036456"
-    # response = sms.send(to = phone, form = '9850002710036456',  50002710036456,  text= message)
     response = sms.send("09100536456", _from, message)
     print(response)
     print(to)

@@ -11,7 +11,9 @@ class PasswordChangeForm(SetPasswordForm):
 
     error_messages = {
         **SetPasswordForm.error_messages,
-        "password_incorrect": ("Your old Password is not True. Please enter it again."),
+        "password_incorrect": (
+            "Your old Password is not True. Please enter it again."
+        ),
     }
     old_password = forms.CharField(
         label=("Old password"),
