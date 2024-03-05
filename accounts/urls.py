@@ -10,13 +10,13 @@ from accounts.views import (
     PasswordChangeView,
 )
 
-app_name = "acounts"
+app_name = "accounts"
 
 urlpatterns = [
     path("login/", LoginView.as_view(), name="login"),
     path("logout/", LogOutView.as_view(), name="logout"),
     path("signup/", SignUpView.as_view(), name="signup"),
-    path("api/V1/", include("acounts.api.V1.urls")),
+    # path("api/V1/", include("accounts.api.V1.urls")),
     path(
         "change-password/",
         PasswordChangeView.as_view(),

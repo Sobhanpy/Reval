@@ -3,11 +3,11 @@ from django.contrib.auth.models import (
     PermissionsMixin,
     AbstractBaseUser,
 )
-from accounts.models import CustomeBaseUserManager
+from accounts.models.CustomeUserManager import CustomeBaseUserManager
 
 
 class CustomeUser(AbstractBaseUser, PermissionsMixin):
-    phone = models.CharField(max_length=12)
+    phone = models.CharField(max_length=12, unique = True)
     username = models.CharField(max_length=100, unique=True)
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
