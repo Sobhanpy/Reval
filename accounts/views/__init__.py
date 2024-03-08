@@ -1,5 +1,5 @@
 from accounts.views.Login import LoginView
-from accounts.views.Logout import LogOutView
+from accounts.views.Logout import LogoutView
 from accounts.views.PassworChangeDone import ChangePasswordDoneView
 from accounts.views.PasswordChange import PasswordChangeView
 from accounts.views.PasswordReset import PasswordResetView

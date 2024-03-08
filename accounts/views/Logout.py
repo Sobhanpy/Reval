@@ -3,7 +3,7 @@ from django.contrib.auth import logout
 from django.views.generic import TemplateView
 
 
-class LogOutView(TemplateView):
+class LogoutView(TemplateView):
     """
     Thiis class is fof LogOut User
     """
